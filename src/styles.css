@@ -1,0 +1,281 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 280px;
+  margin: 0;
+
+  font: 400 1.6rem / 2.6rem "Roboto", Arial, sans-serif;
+  color: #000000;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 25px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-title {
+  margin: 0;
+  padding: 20px 0 0;
+  color: #5e5e5e;
+  font-weight: 400;
+  cursor: default;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+input {
+  font: 400 1.4rem / 2.2rem "Roboto", Arial, sans-serif;
+}
+
+.input-label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: #5e5e5e;
+}
+
+.input-title {
+  border: 0;
+  border-bottom: 1px solid #87cefa;
+  padding: 0 5px 2px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  width: 410px;
+}
+
+.error {
+  border-bottom: 1px solid #b10034;
+}
+
+.mce-panel {
+  border: 0 !important;
+}
+
+.mce-container {
+  font-family: "Roboto", Arial, sans-serif !important;
+}
+
+.mce-tinymce {
+  width: 420px !important;
+  max-width: 420px !important;
+}
+
+.mce-content-body {
+  border-bottom: 1px solid #87cefa;
+  font-family: "Roboto", Arial, sans-serif !important;
+  padding-bottom: 2px !important;
+  position: relative;
+}
+
+.mce-content-body > p {
+  margin: 10px 0 0;
+}
+
+.mce-edit-focus {
+  outline: none !important;
+}
+
+.select-color {
+  outline: none;
+  padding: 5px;
+}
+
+.form-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-color {
+  width: 185px;
+  padding: 5px;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #5e5e5e;
+  border: none;
+  border-bottom: 1px solid #87cefa;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width:420px;
+  align-items: flex-start;
+}
+
+.form-row-edit {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.tag-input {
+  width: 185px;
+  border: none;
+  border-bottom: 1px solid #87cefa;
+  outline: none;
+  font-style: italic;
+  padding: 0 2px 6px;
+  font-size: 1.5rem;
+}
+
+.tag-list {
+  margin: 0;
+  padding: 5px 0 0;
+  list-style: none;
+  font: 400 1.6rem / 2.6rem "Roboto", Arial, sans-serif;
+}
+
+.tag-list > li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.tag {
+  border: 1px solid #e6e6e6;
+  padding: 5px 15px;
+  line-height: 3.2rem;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.tag-checkbox {
+  display: none;
+}
+
+input[type=checkbox]:checked + label {
+  padding: 5 10px;
+  margin-bottom: 5px;
+  border: 1px solid #e6e6e6;
+  background: #e6e6e6;
+  border-radius: 3px;
+  font-style: italic;
+}
+
+.btn-submit {
+  width: 120px;
+  height: 35px;
+  background: #f04864;
+  border: none;
+  align-self: center;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-submit:active {
+  background: #b10034;
+}
+
+.note-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.note-list > li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  position: relative;
+  padding: 15px;
+  border-radius: 3px;
+  margin: 15px;
+}
+
+.note-title {
+  margin: 5px 5px 10px;
+}
+
+.note-tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.note-tags-item {
+  padding: 0 5px;
+  margin: 5px;
+  border: 1px solid #e6e6e6;
+  background: #e6e6e6;
+  border-radius: 3px;
+  font-style: italic;
+  min-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.btn-remove {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #ff0049;
+}
+
+.btn-edit {
+  text-align: center;
+  border: none;
+  background: none;
+  outline: none;
+  color: #b10034;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.red {
+  background-color: lightsalmon;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.blue {
+  background-color: lightskyblue;
+}
+
+.yellow {
+  background-color: #fdfd96;
+}
